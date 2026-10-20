@@ -1,4 +1,4 @@
-<![CDATA[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 100" width="900" height="100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 100" width="900" height="100">
   <defs>
     <linearGradient id="ajf-bg-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#10070C"/>
@@ -90,4 +90,4 @@
       <line x1="890" y1="90" x2="890" y2="70"/>
     </g>
   </g>
-</svg>]]>
+</svg>

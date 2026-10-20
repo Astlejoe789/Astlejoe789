@@ -1,4 +1,4 @@
-<![CDATA[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320">
   <defs>
     <!-- Unique gradient IDs -->
     <linearGradient id="ajh-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -322,4 +322,4 @@
     <circle cx="885" cy="305" r="2" fill="#701A3D" opacity="0.5"/>
     
   </g>
-</svg>]]>
+</svg>
