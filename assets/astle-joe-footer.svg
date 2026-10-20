@@ -1,0 +1,93 @@
+<![CDATA[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 100" width="900" height="100">
+  <defs>
+    <linearGradient id="ajf-bg-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10070C"/>
+      <stop offset="50%" stop-color="#190B12"/>
+      <stop offset="100%" stop-color="#10070C"/>
+    </linearGradient>
+    
+    <linearGradient id="ajf-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#701A3D" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#C77B9B" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#701A3D" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#451126" stop-opacity="0"/>
+    </linearGradient>
+    
+    <linearGradient id="ajf-text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C77B9B"/>
+      <stop offset="50%" stop-color="#E5B5C7"/>
+      <stop offset="100%" stop-color="#C77B9B"/>
+    </linearGradient>
+    
+    <filter id="ajf-glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="ajf-clip">
+      <rect x="1" y="1" width="898" height="98" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="100" rx="8" fill="url(#ajf-bg-grad)"/>
+  <rect x="0.5" y="0.5" width="899" height="99" rx="8" fill="none" stroke="#451126" stroke-opacity="0.3" stroke-width="0.5"/>
+
+  <g clip-path="url(#ajf-clip)">
+    
+    <!-- Subtle grid -->
+    <g stroke="#451126" stroke-opacity="0.06" stroke-width="0.5">
+      <line x1="0" y1="25" x2="900" y2="25"/>
+      <line x1="0" y1="50" x2="900" y2="50"/>
+      <line x1="0" y1="75" x2="900" y2="75"/>
+    </g>
+
+    <!-- Top accent line -->
+    <rect x="100" y="18" width="700" height="1" rx="0.5" fill="url(#ajf-line-grad)">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Floating data dots -->
+    <circle r="1" fill="#C77B9B" opacity="0.4">
+      <animateMotion dur="12s" repeatCount="indefinite"
+        path="M 50 50 C 200 30, 400 70, 550 45 S 750 60, 850 50"/>
+    </circle>
+    <circle r="0.8" fill="#E5B5C7" opacity="0.3">
+      <animateMotion dur="15s" repeatCount="indefinite" begin="3s"
+        path="M 850 55 C 700 75, 500 35, 350 60 S 150 40, 50 55"/>
+    </circle>
+    
+    <!-- Message -->
+    <text x="450" y="52" 
+          font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" 
+          font-size="12" 
+          font-weight="300" 
+          fill="url(#ajf-text-grad)" 
+          text-anchor="middle" 
+          letter-spacing="3"
+          opacity="0.8">
+      LEARNING · BUILDING · EVOLVING WITH AI
+    </text>
+    
+    <!-- Bottom accent line -->
+    <rect x="150" y="68" width="600" height="0.5" rx="0.25" fill="url(#ajf-line-grad)">
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="8s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Corner accents -->
+    <g stroke="#701A3D" stroke-opacity="0.25" stroke-width="0.8">
+      <line x1="10" y1="10" x2="30" y2="10"/>
+      <line x1="10" y1="10" x2="10" y2="30"/>
+      <line x1="890" y1="10" x2="870" y2="10"/>
+      <line x1="890" y1="10" x2="890" y2="30"/>
+      <line x1="10" y1="90" x2="30" y2="90"/>
+      <line x1="10" y1="90" x2="10" y2="70"/>
+      <line x1="890" y1="90" x2="870" y2="90"/>
+      <line x1="890" y1="90" x2="890" y2="70"/>
+    </g>
+  </g>
+</svg>]]>
